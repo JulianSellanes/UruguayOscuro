@@ -66,6 +66,11 @@ body {
     color: white;
 }
 
+.memeImg {
+    width: 90%;
+    margin-top: 20px;
+}
+
 .aboutPanels {
     margin-top: 20px;
 
