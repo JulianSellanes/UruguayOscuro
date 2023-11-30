@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(22, 22, 22);    
+}
+
+/* .home {
+
+} */
+
+
+
+
+
+.topDiv {
+    background-color: rgb(36, 36, 36);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 5%;
+}
+
+.topDiv h1 a {
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+}
+
+.navList {
+    list-style: none;
+}
+
+.navList li {
+    display: inline-block;
+    margin-left: 20px;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navList li a {
+    transition: all 0.3s ease 0s;
+    color: white;
+    text-decoration: none;
+}
+
+.navList li a:hover {
+    color: rgb(120, 120, 120)
+}
+
+
+
+
+.middleDiv {
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
