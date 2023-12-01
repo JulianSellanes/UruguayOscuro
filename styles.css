@@ -9,9 +9,6 @@ body {
     background-color: rgb(22, 22, 22);    
 }
 
-/* .home {
-
-} */
 
 
 
@@ -24,7 +21,8 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    padding: 30px 5%;
+    padding: 20px 5%;
+    overflow: hidden;
 }
 
 .topDiv h1 a {
@@ -33,26 +31,93 @@ body {
     color: white;
 }
 
-.navList {
+.toggleBttn {
+    /* position: absolute; */
+    /* top: 32px; */
+    /* right: 30px; */
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 30px;
+    height: 21px;
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.keepHor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.navDiv ul {
     list-style: none;
+    display: flex;
 }
 
-.navList li {
-    display: inline-block;
-    margin-left: 20px;
-
-    font-size: 20px;
-    font-weight: bold;
+.navDiv li:nth-child(1) {
+    margin-right: 10px;
 }
 
-.navList li a {
+.navDiv li a {
+    /* background-color: green; */
     transition: all 0.3s ease 0s;
     color: white;
+    font-size: 20px;
+    font-weight: bold;
     text-decoration: none;
+
+    padding: 16px;
+    display: block;
 }
 
-.navList li a:hover {
+.navDiv li a:hover {
     color: rgb(120, 120, 120)
+}
+
+@media screen and (max-width: 600px) {
+    .topDiv {
+        flex-direction: column;
+    }
+
+    .toggleBttn {
+        display: flex;
+    }
+
+    .keepHor {
+        width: 100%;
+    }
+
+    .navDiv {
+        display: none;
+        width: 100%;
+    }
+
+    .navDiv ul {
+        width: 100%;
+        flex-direction: column;
+        padding: 12px 0 0;
+    }
+
+    .navDiv li{
+        text-align: center;
+    }
+
+    .navDiv li:nth-child(1) {
+        margin-right: 0;
+    }
+
+    .navDiv.active {
+        display: flex;
+    }
 }
 
 
